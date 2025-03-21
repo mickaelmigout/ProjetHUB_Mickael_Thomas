@@ -226,7 +226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5374660820037978573}
   m_Layer: 0
-  m_Name: Vitrine 1x1
+  m_Name: Vitrine1x1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,16 +1,27 @@
 using UnityEngine;
+using TMPro;
 
 public class PlayerCollision : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    public Transform Player;
+    public Canvas canvasPNJ;
+
+
+
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            canvasPNJ.gameObject.SetActive(true);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerExit(Collider other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            canvasPNJ.gameObject.SetActive(false);
+        }
     }
 }
